@@ -1,7 +1,8 @@
 # laravelapp
 Please follow all these mentioned steps.
+
 1- Run below command through command line in root project directory 
-       Composer install in laravel project directory  
+       Composer install  
 
 2- Create database  
 
