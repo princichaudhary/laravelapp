@@ -1,0 +1,40 @@
+<?php
+
+https://laravel.com/docs/5.1/eloquent-relationships
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Post extends Model
+{
+    /**
+     * Get the comments for the blog post.
+     */
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+}
+
+
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Comment extends Model
+{
+    /**
+     * Get the post that owns the comment.
+     */
+    public function post()
+    {
+        return $this->belongsTo('App\Post');
+    }
+}
+
+
+
+
